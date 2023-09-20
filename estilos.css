@@ -1,0 +1,84 @@
+body {
+  --vermelho-claro: #FFFF;
+  /* Vermelho claro */
+  --vermelho-escuro: #FF0000;
+  /* Vermelho escuro */
+  font-family: 'Barlow', sans-serif;
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--vermelho-claro);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--vermelho-claro);
+  border-color: var(--vermelho-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banner-1 {
+  background-image: url(./assets/banner-antony.JPG);
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* Alterado para remover o zoom */
+  background-position: top left;
+  /* Alterado para posicionar a imagem no topo e à esquerda */
+  /* background-attachment: fixed;*/
+  background-color: #f0f0f0;
+}
+
+.banners-titulo {
+  --bs-bg-opacity: .2;
+}
+
+.banner-2 {
+  background-image: url(./assets/banner-2.png);
+}
+
+.banner-3 {
+  background-image: url(./assets/banner-3.png);
+}
+
+
+
+.banners-titulo {
+  --bs-bg-opacity: .2;
+}
+
+.botao-padrao {
+  background-color: var(--vermelho-claro);
+  color: black;
+}
+
+.botao-padrao:hover {
+  background-color: var(--vermelho-escuro);
+}
+
+.input-range::-webkit-slider-thumb,
+footer {
+  background-color: var(--vermelho-claro);
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+
+  .nav-link,
+  .card-body,
+  .offcanvas,
+  .accordion,
+  .btn {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+    --bs-body-color: white;
+  }
+}
